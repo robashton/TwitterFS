@@ -46,10 +46,10 @@ begin
     persister = TwitterPersister.new
     
     fs = FileSystem.new persister, :isnew => true
-    file = Document.from_file_path(fs, 'inode-detail.jpg')
+    file = Document.from_file_path(fs, 'orly.jpg')
 
     original = nil
-    File.open('inode-detail.jpg', 'rb') { |f| original = f.read()}
+    File.open('orly.jpg', 'rb') { |f| original = f.read()}
       
     fs.root.add_document(file)
     fs.flush()
@@ -58,24 +58,13 @@ begin
     
     doc = fs.root.documents[0]
     
-    doc.title.should == 'inode-detail.jpg'
+    doc.title.should == 'orly.jpg'
     doc.data.length.should == original.length
 
     File.open('test.jpg', 'wb') {|f| f.write(doc.data) }
 
   end
-  
-  it "this isn't even a real test" do
 
-    data = nil
-    File.open('inode-detail.jpg', 'rb') { |f| data = f.read()}
-
-
-    File.open('test1.jpg', 'wb') {|f| f.write(data)
-    f.flush()}
-
-   
-  end
 end
 
   it "should be able to watch for new files beeing created" do
