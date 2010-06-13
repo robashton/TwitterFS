@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager" verified="true">
     <list default="true" readonly="true" id="28a084e3-9a92-4bc2-9c3d-e1b158fc0497" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/watcher.rb" afterPath="$PROJECT_DIR$/watcher.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/integration_tests.rb" afterPath="$PROJECT_DIR$/integration_tests.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/twitterfs_tests.rb" afterPath="$PROJECT_DIR$/twitterfs_tests.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fs/orly.jpg" />
       <change type="DELETED" beforePath="D:\Files\Programming\TwitterFS\.idea\dictionaries\Rob_Ashton.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log.txt" afterPath="$PROJECT_DIR$/log.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/twitterpersister.rb" afterPath="$PROJECT_DIR$/twitterpersister.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fs/notes.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/twitterfs.rb" afterPath="$PROJECT_DIR$/twitterfs.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/orly.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/twitterfspersistance.rb" afterPath="$PROJECT_DIR$/twitterfspersistance.rb" />
     </list>
     <ignored path=".idea/workspace.xml" />
@@ -39,7 +34,7 @@
       <file leaf-file-name="twitterfs.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/twitterfs.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="109" column="21" selection-start="2035" selection-end="2035" vertical-scroll-proportion="0.0">
+            <state line="70" column="24" selection-start="1155" selection-end="1155" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -48,16 +43,16 @@
       <file leaf-file-name="integration_tests.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/integration_tests.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="19" selection-start="258" selection-end="258" vertical-scroll-proportion="0.0">
+            <state line="37" column="24" selection-start="1050" selection-end="1050" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="watcher.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="watcher.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/watcher.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="15" selection-start="170" selection-end="170" vertical-scroll-proportion="0.13346419">
+            <state line="19" column="31" selection-start="542" selection-end="542" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -84,19 +79,17 @@
       <file leaf-file-name="twitterpersister.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/twitterpersister.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="43" selection-start="1274" selection-end="1274" vertical-scroll-proportion="0.0">
+            <state line="24" column="49" selection-start="747" selection-end="747" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="twitterfspersistance.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="twitterfspersistance.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/twitterfspersistance.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="16" selection-start="72" selection-end="82" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1276432882773" expanded="true" signature="277:378" placeholder="if ... end" />
-              </folding>
+            <state line="29" column="19" selection-start="624" selection-end="624" vertical-scroll-proportion="0.48380765">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -125,11 +118,11 @@
         <option value="$PROJECT_DIR$/Log.rb" />
         <option value="$PROJECT_DIR$/twitterfs_persistance_tests.rb" />
         <option value="$PROJECT_DIR$/twitterfs.rb" />
-        <option value="$PROJECT_DIR$/twitterfspersistance.rb" />
-        <option value="$PROJECT_DIR$/twitterpersister.rb" />
         <option value="$PROJECT_DIR$/twitterpersistertests.rb" />
-        <option value="$PROJECT_DIR$/integration_tests.rb" />
         <option value="$PROJECT_DIR$/watcher.rb" />
+        <option value="$PROJECT_DIR$/integration_tests.rb" />
+        <option value="$PROJECT_DIR$/twitterpersister.rb" />
+        <option value="$PROJECT_DIR$/twitterfspersistance.rb" />
       </list>
     </option>
   </component>
@@ -325,6 +318,20 @@
         <state line="11633" column="55" selection-start="210377" selection-end="210377" vertical-scroll-proportion="0.0748503" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/integration_tests.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="24" selection-start="1050" selection-end="1050" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/watcher.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="31" selection-start="542" selection-end="542" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/twitterpersistertests.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="25" selection-start="37" selection-end="53" vertical-scroll-proportion="0.0">
@@ -332,25 +339,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/twitterfspersistance.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="16" selection-start="72" selection-end="82" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1276432882773" expanded="true" signature="277:378" placeholder="if ... end" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/twitterpersister.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="43" selection-start="1274" selection-end="1274" vertical-scroll-proportion="0.0">
+        <state line="24" column="49" selection-start="747" selection-end="747" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/twitterfs_tests.rb">
+    <entry file="file://$PROJECT_DIR$/twitterfs.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="7" selection-start="963" selection-end="963" vertical-scroll-proportion="0.0">
+        <state line="70" column="24" selection-start="1155" selection-end="1155" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -362,23 +360,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/twitterfs.rb">
+    <entry file="file://$PROJECT_DIR$/twitterfs_tests.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="21" selection-start="2035" selection-end="2035" vertical-scroll-proportion="0.0">
+        <state line="55" column="7" selection-start="963" selection-end="963" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/integration_tests.rb">
+    <entry file="file://$PROJECT_DIR$/twitterfspersistance.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="19" selection-start="258" selection-end="258" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/watcher.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="15" selection-start="170" selection-end="170" vertical-scroll-proportion="0.13346419">
+        <state line="29" column="19" selection-start="624" selection-end="624" vertical-scroll-proportion="0.48380765">
           <folding />
         </state>
       </provider>

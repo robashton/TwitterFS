@@ -74,9 +74,8 @@ class FileSystem
     end while tweet != nil 
 
     # We need to decode everything cos we encode everything
-    #loaded = Base64.decode64(completeddata)
-
-    completeddata
+    loaded = Base64.decode64(completeddata)
+    loaded
 
   end 
   
@@ -85,7 +84,7 @@ class FileSystem
     Log.write("Writing " + data.length.to_s + " bytes")
 
     # We Base64 encode anything coming in so we can deal with anything
-    encoded = data #Base64.encode64(data)
+    encoded = Base64.encode64(data)
    
     arraycount = (encoded.length / @tweet_size).to_i
     i = arraycount;

@@ -3,12 +3,9 @@ require 'rubygems'
 require 'json'
 require 'twitterfspersistance'
 require 'Base64'
-require 'watcher'
 require 'twitterpersister'
 
 describe "Integration"  do 
-
-begin
 
   it "should be able to persist data with a different Document system" do
 
@@ -60,27 +57,6 @@ begin
 
     File.open('test.jpg', 'wb') {|f| f.write(doc.data) }
 
-  end
-
-end
-
-  it "should be able to watch for new files beeing created" do
-
-    data = nil
-
-    persister = TwitterPersister.new
-    fs = FileSystem.new persister, :isnew => true
-    root = fs.root
-    root.add_document(Document.from_file_path(fs, 'inode-detail.jpg'))
-    
-    dir = Directory.new(fs, nil)
-    dir.title = 'foo'
-    root.add_directory(dir)
-    
-    dir.add_document(Document.from_file_path(fs, 'inode-detail.jpg'))
-    
-    root.flush nil
-    
   end
   
 end

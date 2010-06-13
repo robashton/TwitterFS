@@ -17,7 +17,7 @@ class TwitterPersister
   end
 
   def add_tweet(tweet, annotation)
-      added =  @twitter.update(tweet + "@~" + annotation)
+      added =  @twitter.update(rand(1000).to_s + "@~" + tweet + "@~" + annotation)
       addedtweet = Tweet.new(added.id, tweet, annotation)
 
       @cache << addedtweet
@@ -58,7 +58,7 @@ class TwitterPersister
 
       splittweet = t.text.split(/@~/)
 
-      addedtweet = Tweet.new(t.id, splittweet[0], splittweet[1])
+      addedtweet = Tweet.new(t.id, splittweet[1], splittweet[2])
          @cache << addedtweet
     }
   end
