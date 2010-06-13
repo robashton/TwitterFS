@@ -6,9 +6,6 @@ require 'Base64'
 require 'watcher'
 require 'twitterpersister'
 
-
-$root = 'fs/'
-
 describe "Integration"  do 
 
 begin
@@ -70,13 +67,20 @@ end
   it "should be able to watch for new files beeing created" do
 
     data = nil
-    title = '123456.jpg'
-    File.open('inode-detail.jpg', 'rb') { |f| data = f.read()}
-    File.open('fs/' + title, 'wb') {|f| f.write(data) }
 
     persister = TwitterPersister.new
     fs = FileSystem.new persister, :isnew => true
-
+    root = fs.root
+    root.add_document(Document.from_file_path(fs, 'inode-detail.jpg'))
+    
+    dir = Directory.new(fs, nil)
+    dir.title = 'foo'
+    root.add_directory(dir)
+    
+    dir.add_document(Document.from_file_path(fs, 'inode-detail.jpg'))
+    
+    root.flush nil
+    
   end
   
 end
