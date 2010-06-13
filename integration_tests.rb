@@ -10,7 +10,7 @@ $root = 'fs/'
 
 describe "Integration"  do 
 
-=begin
+begin
   it "should be able to persist data with a different Document system" do
 
     persister = Persister.new
@@ -58,7 +58,7 @@ describe "Integration"  do
     
     doc.title.should == 'inode-detail.jpg'
     for i in 0..original.length
-      doc.data[i].should == original[i]
+      (doc.data[i] == original[i]).should == true
     end
     
 
@@ -77,7 +77,7 @@ describe "Integration"  do
 
    
   end
-=end 
+end
 
   it "should be able to watch for new files beeing created" do
 
