@@ -1,4 +1,4 @@
-http://github.com/robashton/TwitterFS.gitrequire 'twitterfs'
+require 'twitterfs'
 require 'twitterfspersistance'
 
 

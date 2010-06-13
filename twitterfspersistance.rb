@@ -10,7 +10,7 @@ class FileSystem
 
   def initialize(persister, options = {})
     @persister = persister
-    @tweet_size = 500
+    @tweet_size = 70
     tweet = @persister.get_most_recent_tweet()
 
     if(options.nil? == false and options.has_key?(:isnew))
@@ -41,10 +41,9 @@ class FileSystem
     end while tweet != nil 
 
     # We need to decode everything cos we encode everything
-    loaded = Base64.decode64(completeddata)
+    #loaded = Base64.decode64(completeddata)
 
-    Log.write("Loaded " + loaded.length.to_s + " bytes")
-    loaded
+    completeddata
 
   end 
   
@@ -53,7 +52,7 @@ class FileSystem
     Log.write("Writing " + data.length.to_s + " bytes")
 
     # We Base64 encode anything coming in so we can deal with anything
-    encoded = Base64.encode64(data)
+    encoded = data #Base64.encode64(data)
    
     arraycount = (encoded.length / @tweet_size).to_i
     i = arraycount;

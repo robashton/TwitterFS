@@ -4,16 +4,18 @@ require 'json'
 require 'twitterfspersistance'
 require 'Base64'
 require 'watcher'
-#require 'ruby-debug'
+require 'twitterpersister'
+
 
 $root = 'fs/'
 
 describe "Integration"  do 
 
 begin
+
   it "should be able to persist data with a different Document system" do
 
-    persister = Persister.new
+    persister = TwitterPersister.new
 
     fs = FileSystem.new persister, :isnew => true
     root = fs.root
@@ -41,7 +43,7 @@ begin
   
   it "should be able to persist an image of an inode" do
   
-    persister = Persister.new 
+    persister = TwitterPersister.new
     
     fs = FileSystem.new persister, :isnew => true
     file = Document.from_file_path(fs, 'inode-detail.jpg')
@@ -57,10 +59,7 @@ begin
     doc = fs.root.documents[0]
     
     doc.title.should == 'inode-detail.jpg'
-    for i in 0..original.length
-      (doc.data[i] == original[i]).should == true
-    end
-    
+    doc.data.length.should == original.length
 
     File.open('test.jpg', 'wb') {|f| f.write(doc.data) }
 
@@ -86,11 +85,10 @@ end
     File.open('inode-detail.jpg', 'rb') { |f| data = f.read()}
     File.open('fs/' + title, 'wb') {|f| f.write(data) }
 
-    persister = Persister.new
+    persister = TwitterPersister.new
     fs = FileSystem.new persister, :isnew => true
-    w = Watcher.new fs
-    
-    sleep(20)
+
   end
+  
 end
 
